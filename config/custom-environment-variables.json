@@ -2,6 +2,9 @@
   "name": "Second Servings Backend - Development",
   "db": {
     "name": "mongodev",
-    "secret": "mongo_dev_secret"
-  }
+    "secret": "mongo_dev_secret",
+    "uri": "mongouri"
+  },
+  "jwtKey": "jwtKey",
+  "port": "ssPort"
 }
