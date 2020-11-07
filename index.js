@@ -31,7 +31,10 @@ app.get('/', function(request, response) {
   console.log('App is running, server is listening on port ', 6000);
 });
 
-const httpServer = http.createServer(app);
+const httpServer = http.createServer(app, function (req, res) {
+  res.writeHead(200, {"Content-Type": "text/plain"})
+  res.end("Hello World\n")
+});
 
 // APOLLO STUFF
 const server = new ApolloServer({
