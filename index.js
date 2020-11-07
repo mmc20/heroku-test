@@ -27,8 +27,8 @@ if (app.get("env") === "development") {
 app.get('/', function(request, response) {
   var result = 'App is running'
   response.send(result);
-}).listen(9000, function() {
-  console.log('App is running, server is listening on port ', 9000);
+}).listen(6000, function() {
+  console.log('App is running, server is listening on port ', 6000);
 });
 
 const httpServer = http.createServer(app);
