@@ -1,5 +1,4 @@
 // Library imports
-const config = require("config");
 const startupDebugger = require("debug")("app:startup");
 const express = require("express");
 const helmet = require("helmet");
@@ -35,7 +34,7 @@ const server = new ApolloServer({
 });
 server.applyMiddleware({ app });
 
-const DEV_PORT = config.get("port");
+const DEV_PORT = 9000;
 httpServer.listen({ port: DEV_PORT }, () => {
   log.info("Server running.");
   log.info(

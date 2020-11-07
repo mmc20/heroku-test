@@ -1,9 +1,10 @@
-const config = require("config");
+require("dotenv").config();
 const mongoose = require("mongoose");
 const dbDebugger = require("debug")("app:db");
 
+
 const dbConnection = mongoose
-  .connect(config.get("db.uri"), {
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,

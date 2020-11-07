@@ -1,4 +1,4 @@
-const config = require("config");
+require("dotenv").config();
 const { composeWithMongoose } = require("graphql-compose-mongoose");
 const Joi = require("joi");
 const mongoose = require("mongoose");
@@ -40,7 +40,7 @@ userSchema.methods.generateAuthToken = function () {
       name: this.name,
       isAdmin: this.isAdmin,
     },
-    config.get("jwtKey")
+    process.env.JWTKEY
   );
   return token;
 };
