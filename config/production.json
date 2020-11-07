@@ -1,0 +1,9 @@
+{
+  "name": "Second Servings Backend - Production",
+  "db": {
+    "name": "mongoprod",
+    "secret": "mongo_prod_secret"
+  },
+  "port": 7070,
+  "jwtKey": "SS_JWT_KEY"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Second Servings Backend - Development",
+  "db": {
+    "uri": "mongodb+srv://admin:admin@second-servings.3llah.azure.mongodb.net/currydb?retryWrites=true&w=majority"
+  },
+  "port": 9000,
+  "jwtKey": "jwtDevKey"
+}

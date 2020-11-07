@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "GraphQL backend for Second Servings app",
+  "main": "index.js",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muthu",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.17.0",
+    "bcrypt": "^5.0.0",
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "graphql": "^15.3.0",
+    "graphql-compose": "^7.21.1",
+    "graphql-compose-mongoose": "^8.0.3",
+    "helmet": "^4.1.0",
+    "joi": "^17.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.10.2",
+    "morgan": "^1.10.0"
+  }
+}
